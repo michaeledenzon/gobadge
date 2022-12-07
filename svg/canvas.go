@@ -34,6 +34,7 @@ func (canvas *Canvas) Open(width float64, height float64) error {
 }
 
 func (canvas *Canvas) Close() error {
+	
 	_, err := fmt.Fprint(canvas.Writer, `</svg>`)
 	return err
 }
